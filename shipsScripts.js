@@ -44,7 +44,7 @@ var makeTable = function(ships, criteria)
     row.append("td").text(function(d) { return d.crew; });
     row.append("td").text(function(d) { return d.hyperdrive_rating; });
     
-    var pilotList = row.append("td").append("a").text(function(d){return formatPilots(d.pilots)}).attr("href", "index.html");
+    var pilotList = row.append("td").append("a").text(function(d){return formatPilots(d.pilots)}).attr("href", "people.html");
 }
 
 var removeTable = function()
