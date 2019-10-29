@@ -1,0 +1,49 @@
+html
+{
+    background-image: url(spaceBackground.png);
+}
+body
+{
+    color: #E6DA25;
+}
+a
+{
+    color: #A9A022;
+}
+h1
+{
+    text-align: center;
+    font-size: 84px;
+}
+button
+{
+    font-size: 54px;
+}
+#left
+{
+    position: absolute;
+    align-content: center;
+    left: 25%;
+}
+#right
+{
+    position: absolute;
+    align-content: center;
+    right: 25%;
+}
+audio
+{
+    align-content: center;
+    position: absolute;
+    bottom: 50%;
+    left: 41%;
+
+}
+table, th, td
+{
+    font-size: 36px;
+    border: 1px solid #E6DA25;
+    text-align: center;
+    width: 1800px;
+    height: 200px;
+}
