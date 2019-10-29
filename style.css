@@ -15,6 +15,13 @@ h1
     text-align: center;
     font-size: 84px;
 }
+p
+{
+    font-size: 24px;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
 button
 {
     font-size: 54px;
@@ -30,6 +37,13 @@ button
     position: absolute;
     align-content: center;
     right: 25%;
+}
+#notes
+{
+    position: absolute;
+    bottom: 40px;
+    left: 47%;
+    font-size: 24px;
 }
 audio
 {
