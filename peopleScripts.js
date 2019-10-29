@@ -44,7 +44,7 @@ var makeTable = function(people, criteria)
     row.append("td").text(function(d) { return d.mass + "kg"; });
     row.append("td").text(function(d) { return d.gender; });
     
-    var shipList = row.append("td").append("ul").text(function(d){return formatShips(d.starships)});
+    var shipList = row.append("td").append("a").text(function(d){return formatShips(d.starships)}).attr("href", "starships.html");
 }
 
 var removeTable = function()
