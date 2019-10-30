@@ -114,7 +114,34 @@ var formatShips = function(ships)
 {
     var result = "\n";
     ships.forEach(function(element){
-        result += (element + "\n")
+        console.log(element);
+        switch(element)
+        {
+            case "https://swapi.co/api/starships/12/":
+                    result += "\nX-Wing, "
+                    break;
+            case "https://swapi.co/api/starships/22/":
+                    result += "\nImperial Shuttle, "
+                    break;
+            case "https://swapi.co/api/starships/13/":
+                    result += "\nTIE Advanced x1, "
+                    break;
+            case "https://swapi.co/api/starships/48/":
+                    result += "\nJedi Starfighter, "
+                    break;
+            case "https://swapi.co/api/starships/59/":
+                    result += "\nTrade Federation Cruiser, "
+                    break;
+            case "https://swapi.co/api/starships/64/":
+                    result += "\nNaboo Star Skiff, "
+                    break;
+            case "https://swapi.co/api/starships/65/":
+                    result += "\nJedi Interceptor, "
+                    break;
+            case "https://swapi.co/api/starships/74/":
+                    result += "\nBelbullab-22 Starfighter, "
+                    break;
+        }
     })
     
     return result;

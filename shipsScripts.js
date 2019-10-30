@@ -106,9 +106,42 @@ var formatPilots = function(pilots)
     
     var result = "\n";
     pilots.forEach(function(element){
-        result += (element + "\n")
+        switch(element)
+            {
+                case "https://swapi.co/api/people/13/":
+                    result += "\nChewbacca, "
+                    break;
+                case "https://swapi.co/api/people/14/":
+                    result += "\nHan Solo, "
+                    break;
+                case "https://swapi.co/api/people/25/":
+                    result += "\nLando Calrissian, "
+                    break;
+                case "https://swapi.co/api/people/31/":
+                    result += "\nNien Nunb, "
+                    break;
+                case "https://swapi.co/api/people/1/":
+                    result += "\nLuke Skywalker, "
+                    break;
+                case "https://swapi.co/api/people/9/":
+                    result += "\nBiggs Darklighter, "
+                    break;
+                case "https://swapi.co/api/people/18/":
+                    result += "\nWedge Antilles, "
+                    break;
+                case "https://swapi.co/api/people/19/":
+                    result += "\nJek Tono Porkins, "
+                    break;
+                case "https://swapi.co/api/people/4/":
+                    result += "\nDarth Vader, "
+                    break;
+                case "https://swapi.co/api/people/22/":
+                    result += "\nBoba Fett, "
+                    break;
+            }
+        
     })
-    
+    result = result.substr(0, result.length - 2);
     return result;
     
 }
