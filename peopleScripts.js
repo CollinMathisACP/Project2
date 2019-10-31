@@ -36,7 +36,6 @@ function(Error)
 
 var makeTable = function(people, criteria)
 {
-    console.log(people)
     sortPeople(people, criteria);
     var row = d3.select("tbody").selectAll("tr").data(people).enter().append("tr");
     row.append("td").text(function(d) { return d.name; });
@@ -114,7 +113,6 @@ var formatShips = function(ships)
 {
     var result = "\n";
     ships.forEach(function(element){
-        console.log(element);
         switch(element)
         {
             case "https://swapi.co/api/starships/12/":
