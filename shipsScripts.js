@@ -36,7 +36,6 @@ function(Error)
 
 var makeTable = function(ships, criteria)
 {
-    console.log(ships)
     sortShips(ships, criteria);
     var row = d3.select("tbody").selectAll("tr").data(ships).enter().append("tr");
     row.append("td").text(function(d) { return d.name; });
