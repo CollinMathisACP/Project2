@@ -26,6 +26,12 @@ button
 {
     font-size: 54px;
 }
+
+.home
+{
+    font-size: 36px;
+}
+
 #left
 {
     position: absolute;
